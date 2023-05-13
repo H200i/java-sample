@@ -32,7 +32,7 @@ jobs:
       - name: Build Maven project
         run: |
           mvn -B package --file pom.xml
-          mkdir staging && cp target/*.jar staging
+          mkdir staging && cp target/*.war staging
 
         # Upload Artificats
       - name: Upload Artificats
